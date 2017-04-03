@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F1D92771E15EFE000D3E4DE /* GraphicsClusteringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1D92761E15EFE000D3E4DE /* GraphicsClusteringManager.swift */; };
+		1F24E7671E144031000C4C81 /* AGS+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24E7661E144031000C4C81 /* AGS+Additions.swift */; };
+		1FB5C0DB1E1411D40091EDAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C0DA1E1411D40091EDAD /* AppDelegate.swift */; };
+		1FB5C0DD1E1411D40091EDAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C0DC1E1411D40091EDAD /* MainViewController.swift */; };
+		1FB5C0E01E1411D40091EDAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB5C0DE1E1411D40091EDAD /* Main.storyboard */; };
+		1FB5C0E21E1411D40091EDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB5C0E11E1411D40091EDAD /* Assets.xcassets */; };
+		1FB5C0E51E1411D40091EDAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB5C0E31E1411D40091EDAD /* LaunchScreen.storyboard */; };
+		1FB5C0F01E1411D50091EDAD /* clusterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C0EF1E1411D50091EDAD /* clusterTests.swift */; };
+		1FB5C0FB1E1411D50091EDAD /* clusterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C0FA1E1411D50091EDAD /* clusterUITests.swift */; };
+		1FB5C1091E14150C0091EDAD /* VenueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C1081E14150C0091EDAD /* VenueStore.swift */; };
+		1FB5C10B1E1417660091EDAD /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1FB5C10A1E1417660091EDAD /* ArcGIS.bundle */; };
+		1FB5C10D1E1419220091EDAD /* UI+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C10C1E1419220091EDAD /* UI+Additions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FB5C0EC1E1411D50091EDAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB5C0CF1E1411D40091EDAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FB5C0D61E1411D40091EDAD;
+			remoteInfo = cluster;
+		};
+		1FB5C0F71E1411D50091EDAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB5C0CF1E1411D40091EDAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FB5C0D61E1411D40091EDAD;
+			remoteInfo = cluster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F1D92761E15EFE000D3E4DE /* GraphicsClusteringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicsClusteringManager.swift; sourceTree = "<group>"; };
+		1F24E7661E144031000C4C81 /* AGS+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AGS+Additions.swift"; sourceTree = "<group>"; };
+		1FB5C0D71E1411D40091EDAD /* cluster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cluster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB5C0DA1E1411D40091EDAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FB5C0DC1E1411D40091EDAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1FB5C0DF1E1411D40091EDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FB5C0E11E1411D40091EDAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FB5C0E41E1411D40091EDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FB5C0E61E1411D40091EDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB5C0EB1E1411D50091EDAD /* clusterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clusterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB5C0EF1E1411D50091EDAD /* clusterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clusterTests.swift; sourceTree = "<group>"; };
+		1FB5C0F11E1411D50091EDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB5C0F61E1411D50091EDAD /* clusterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clusterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB5C0FA1E1411D50091EDAD /* clusterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clusterUITests.swift; sourceTree = "<group>"; };
+		1FB5C0FC1E1411D50091EDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB5C1081E14150C0091EDAD /* VenueStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueStore.swift; sourceTree = "<group>"; };
+		1FB5C10A1E1417660091EDAD /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ArcGIS.bundle; sourceTree = "<group>"; };
+		1FB5C10C1E1419220091EDAD /* UI+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+Additions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FB5C0D41E1411D40091EDAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB5C0E81E1411D50091EDAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB5C0F31E1411D50091EDAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FB5C0CE1E1411D40091EDAD = {
+			isa = PBXGroup;
+			children = (
+				1FB5C10A1E1417660091EDAD /* ArcGIS.bundle */,
+				1FB5C0D91E1411D40091EDAD /* cluster */,
+				1FB5C0EE1E1411D50091EDAD /* clusterTests */,
+				1FB5C0F91E1411D50091EDAD /* clusterUITests */,
+				1FB5C0D81E1411D40091EDAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FB5C0D81E1411D40091EDAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FB5C0D71E1411D40091EDAD /* cluster.app */,
+				1FB5C0EB1E1411D50091EDAD /* clusterTests.xctest */,
+				1FB5C0F61E1411D50091EDAD /* clusterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FB5C0D91E1411D40091EDAD /* cluster */ = {
+			isa = PBXGroup;
+			children = (
+				1F24E7661E144031000C4C81 /* AGS+Additions.swift */,
+				1FB5C0DA1E1411D40091EDAD /* AppDelegate.swift */,
+				1FB5C0E11E1411D40091EDAD /* Assets.xcassets */,
+				1FB5C0E61E1411D40091EDAD /* Info.plist */,
+				1FB5C0E31E1411D40091EDAD /* LaunchScreen.storyboard */,
+				1FB5C0DE1E1411D40091EDAD /* Main.storyboard */,
+				1FB5C0DC1E1411D40091EDAD /* MainViewController.swift */,
+				1FB5C10C1E1419220091EDAD /* UI+Additions.swift */,
+				1FB5C1081E14150C0091EDAD /* VenueStore.swift */,
+				1F1D92761E15EFE000D3E4DE /* GraphicsClusteringManager.swift */,
+			);
+			path = cluster;
+			sourceTree = "<group>";
+		};
+		1FB5C0EE1E1411D50091EDAD /* clusterTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FB5C0EF1E1411D50091EDAD /* clusterTests.swift */,
+				1FB5C0F11E1411D50091EDAD /* Info.plist */,
+			);
+			path = clusterTests;
+			sourceTree = "<group>";
+		};
+		1FB5C0F91E1411D50091EDAD /* clusterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FB5C0FA1E1411D50091EDAD /* clusterUITests.swift */,
+				1FB5C0FC1E1411D50091EDAD /* Info.plist */,
+			);
+			path = clusterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FB5C0D61E1411D40091EDAD /* cluster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB5C0FF1E1411D50091EDAD /* Build configuration list for PBXNativeTarget "cluster" */;
+			buildPhases = (
+				1FB5C0D31E1411D40091EDAD /* Sources */,
+				1FB5C0D41E1411D40091EDAD /* Frameworks */,
+				1FB5C0D51E1411D40091EDAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cluster;
+			productName = cluster;
+			productReference = 1FB5C0D71E1411D40091EDAD /* cluster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FB5C0EA1E1411D50091EDAD /* clusterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB5C1021E1411D50091EDAD /* Build configuration list for PBXNativeTarget "clusterTests" */;
+			buildPhases = (
+				1FB5C0E71E1411D50091EDAD /* Sources */,
+				1FB5C0E81E1411D50091EDAD /* Frameworks */,
+				1FB5C0E91E1411D50091EDAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FB5C0ED1E1411D50091EDAD /* PBXTargetDependency */,
+			);
+			name = clusterTests;
+			productName = clusterTests;
+			productReference = 1FB5C0EB1E1411D50091EDAD /* clusterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FB5C0F51E1411D50091EDAD /* clusterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB5C1051E1411D50091EDAD /* Build configuration list for PBXNativeTarget "clusterUITests" */;
+			buildPhases = (
+				1FB5C0F21E1411D50091EDAD /* Sources */,
+				1FB5C0F31E1411D50091EDAD /* Frameworks */,
+				1FB5C0F41E1411D50091EDAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FB5C0F81E1411D50091EDAD /* PBXTargetDependency */,
+			);
+			name = clusterUITests;
+			productName = clusterUITests;
+			productReference = 1FB5C0F61E1411D50091EDAD /* clusterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FB5C0CF1E1411D40091EDAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Esri;
+				TargetAttributes = {
+					1FB5C0D61E1411D40091EDAD = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = NJ4VVCSZ7F;
+						ProvisioningStyle = Automatic;
+					};
+					1FB5C0EA1E1411D50091EDAD = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1FB5C0D61E1411D40091EDAD;
+					};
+					1FB5C0F51E1411D50091EDAD = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1FB5C0D61E1411D40091EDAD;
+					};
+				};
+			};
+			buildConfigurationList = 1FB5C0D21E1411D40091EDAD /* Build configuration list for PBXProject "cluster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FB5C0CE1E1411D40091EDAD;
+			productRefGroup = 1FB5C0D81E1411D40091EDAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FB5C0D61E1411D40091EDAD /* cluster */,
+				1FB5C0EA1E1411D50091EDAD /* clusterTests */,
+				1FB5C0F51E1411D50091EDAD /* clusterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FB5C0D51E1411D40091EDAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB5C0E51E1411D40091EDAD /* LaunchScreen.storyboard in Resources */,
+				1FB5C0E21E1411D40091EDAD /* Assets.xcassets in Resources */,
+				1FB5C10B1E1417660091EDAD /* ArcGIS.bundle in Resources */,
+				1FB5C0E01E1411D40091EDAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB5C0E91E1411D50091EDAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB5C0F41E1411D50091EDAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FB5C0D31E1411D40091EDAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB5C0DD1E1411D40091EDAD /* MainViewController.swift in Sources */,
+				1F1D92771E15EFE000D3E4DE /* GraphicsClusteringManager.swift in Sources */,
+				1FB5C10D1E1419220091EDAD /* UI+Additions.swift in Sources */,
+				1FB5C1091E14150C0091EDAD /* VenueStore.swift in Sources */,
+				1F24E7671E144031000C4C81 /* AGS+Additions.swift in Sources */,
+				1FB5C0DB1E1411D40091EDAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB5C0E71E1411D50091EDAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB5C0F01E1411D50091EDAD /* clusterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB5C0F21E1411D50091EDAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB5C0FB1E1411D50091EDAD /* clusterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FB5C0ED1E1411D50091EDAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FB5C0D61E1411D40091EDAD /* cluster */;
+			targetProxy = 1FB5C0EC1E1411D50091EDAD /* PBXContainerItemProxy */;
+		};
+		1FB5C0F81E1411D50091EDAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FB5C0D61E1411D40091EDAD /* cluster */;
+			targetProxy = 1FB5C0F71E1411D50091EDAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FB5C0DE1E1411D40091EDAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FB5C0DF1E1411D40091EDAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FB5C0E31E1411D40091EDAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FB5C0E41E1411D40091EDAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FB5C0FD1E1411D50091EDAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FB5C0FE1E1411D50091EDAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FB5C1001E1411D50091EDAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NJ4VVCSZ7F;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/Frameworks/Static";
+				INFOPLIST_FILE = cluster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esri.cluster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1FB5C1011E1411D50091EDAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NJ4VVCSZ7F;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/Frameworks/Static";
+				INFOPLIST_FILE = cluster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esri.cluster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1FB5C1031E1411D50091EDAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = clusterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esri.clusterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cluster.app/cluster";
+			};
+			name = Debug;
+		};
+		1FB5C1041E1411D50091EDAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = clusterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esri.clusterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cluster.app/cluster";
+			};
+			name = Release;
+		};
+		1FB5C1061E1411D50091EDAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = clusterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esri.clusterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = cluster;
+			};
+			name = Debug;
+		};
+		1FB5C1071E1411D50091EDAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = clusterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esri.clusterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = cluster;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FB5C0D21E1411D40091EDAD /* Build configuration list for PBXProject "cluster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB5C0FD1E1411D50091EDAD /* Debug */,
+				1FB5C0FE1E1411D50091EDAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FB5C0FF1E1411D50091EDAD /* Build configuration list for PBXNativeTarget "cluster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB5C1001E1411D50091EDAD /* Debug */,
+				1FB5C1011E1411D50091EDAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FB5C1021E1411D50091EDAD /* Build configuration list for PBXNativeTarget "clusterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB5C1031E1411D50091EDAD /* Debug */,
+				1FB5C1041E1411D50091EDAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FB5C1051E1411D50091EDAD /* Build configuration list for PBXNativeTarget "clusterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB5C1061E1411D50091EDAD /* Debug */,
+				1FB5C1071E1411D50091EDAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FB5C0CF1E1411D40091EDAD /* Project object */;
+}
