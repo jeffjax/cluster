@@ -22,7 +22,7 @@ class VenueStore {
         
     }
     
-    func loadVenues(location: AGSPoint, spatialReference: AGSSpatialReference, completed: @escaping () -> Void) {
+    func loadVenues(searchText: String, location: AGSPoint, spatialReference: AGSSpatialReference, completed: @escaping () -> Void) {
         
         locatorTask.load() { error in
             let params = AGSGeocodeParameters()
@@ -30,9 +30,9 @@ class VenueStore {
             params.preferredSearchLocation = location
             params.outputSpatialReference = spatialReference
             params.resultAttributeNames = ["*"]
-            self.locatorTask.geocode(withSearchText: "coffee", parameters: params) { results, error in
+            self.locatorTask.geocode(withSearchText: searchText, parameters: params) { results, error in
                 if let results = results {
-                    self.venues = results.map { Venue(location: $0.displayLocation!, name: $0.attributes!["PlaceName"] as! String) }
+                    self.venues = results.map { Venue(location: $0.displayLocation!, name: $0.attributes!["PlaceName"] as! String, vicinity: $0.attributes!["Place_addr"] as! String) }
                 }
                 completed()
             }
@@ -45,10 +45,12 @@ class Venue: NSObject {
     let location: AGSPoint
     let id: String
     let name: String
+    let vicinity: String
     
-    init(location: AGSPoint, name: String) {
+    init(location: AGSPoint, name: String, vicinity: String) {
         self.location = location
         self.id = UUID().uuidString
         self.name = name
+        self.vicinity = vicinity
     }
 }

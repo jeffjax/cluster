@@ -31,8 +31,9 @@ class MainViewController: UIViewController, UIGestureRecognizerDelegate, AGSGeoV
                 mapView.setViewpoint(viewPoint, duration: 0.2)
                 
                 mapView.callout.title = currentVenue.name
+                mapView.callout.detail = currentVenue.vicinity
                 mapView.callout.accessoryButtonType = .custom
-                mapView.callout.show(for: mapGraphic, tapLocation: mapGraphic.geometry as! AGSPoint, animated: true)
+                mapView.callout.show(for: mapGraphic, tapLocation: mapGraphic.geometry as? AGSPoint, animated: true)
             }
 
         }
@@ -58,7 +59,7 @@ class MainViewController: UIViewController, UIGestureRecognizerDelegate, AGSGeoV
         mapView.addObserver(self, forKeyPath: "mapScale", options: [], context: nil)
         
         map.load { error in
-            VenueStore.shared.loadVenues(location: location, spatialReference: map.spatialReference!) {
+            VenueStore.shared.loadVenues(searchText: "coffee", location: location, spatialReference: map.spatialReference!) {
                 self.updateVenues()
             }
         }
@@ -84,7 +85,9 @@ class MainViewController: UIViewController, UIGestureRecognizerDelegate, AGSGeoV
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
         clusteringManager.clusterGraphics(mapView: mapView, symbolSize: symbolSize)
+        
         if let currentVenue = currentVenue, let graphic = graphicForVenue(currentVenue) {
             clusteringManager.mapGraphicForGraphic(graphic).isSelected = true
         }
